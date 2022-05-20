@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="splash_title_text_size">35sp</dimen>
+
+    <dimen name="button_corner_radius">10dp</dimen>
+    <dimen name="button_corner_radius_large">25dp</dimen>
+    <dimen name="radio_button_stroke_width">2dp</dimen>
+    <dimen name="radio_button_radius">5dp</dimen>
+    <dimen name="radio_button_margin">5dp</dimen>
+
+    <dimen name="header_section_height">300dp</dimen>
+    <dimen name="header_text_top_margin">90dp</dimen>
+    <dimen name="header_text_size">40sp</dimen>
+
+    <dimen name="login_card_height">300dp</dimen>
+    <dimen name="login_card_width">320dp</dimen>
+    <dimen name="login_card_top_margin">180dp</dimen>
+    <dimen name="signup_card_height">470dp</dimen>
+    <dimen name="signup_card_width">320dp</dimen>
+    <dimen name="signup_card_top_margin">180dp</dimen>
+    <dimen name="cardview_elevation">10dp</dimen>
+    <dimen name="cardview_corner_radius">14dp</dimen>
+    <dimen name="cardview_content_margin">40dp</dimen>
+
+    <dimen name="edit_text_border_radius">6dp</dimen>
+    <dimen name="edit_text_border_width">1dp</dimen>
+    <dimen name="edit_text_padding">10dp</dimen>
+    <dimen name="submit_button_width">280dp</dimen>
+
+    <dimen name="progress_bar_size">50dp</dimen>
+    <dimen name="progress_text_marginStart">16dp</dimen>
+    <dimen name="progress_text_size">16sp</dimen>
+    <dimen name="progress_content_padding">12dp</dimen>
+
+    <dimen name="action_bar_height">48dp</dimen>
+    <dimen name="toolbar_margin_top">20dp</dimen>
+    <dimen name="hello_text_top_margin">155dp</dimen>
+    <dimen name="name_text_top_margin">190dp</dimen>
+    <dimen name="toolbar_title_text_size">20sp</dimen>
+    <dimen name="profile_image_width">120dp</dimen>
+    <dimen name="profile_image_height">120dp</dimen>
+    <dimen name="profile_image_top_margin">150dp</dimen>
+    <dimen name="profile_image_border_width">6dp</dimen>
+
+    <dimen name="content_layout_padding_top">50dp</dimen>
+    <dimen name="settings_text_padding">18dp</dimen>
+    <dimen name="settings_content_margin">24dp</dimen>
+    <dimen name="settings_header_height">250dp</dimen>
+    <dimen name="profile_image_width_large">110dp</dimen>
+    <dimen name="profile_image_height_large">110dp</dimen>
+    <dimen name="profile_image_top_margin_small">120dp</dimen>
+
+    <dimen name="product_image_height_large">190dp</dimen>
+    <dimen name="product_image_top_margin_small">70dp</dimen>
+    <dimen name="add_img_icon_width">60dp</dimen>
+    <dimen name="add_img_icon_height">60dp</dimen>
+
+    <dimen name="home_header_height">170dp</dimen>
+    <dimen name="home_title_text_size">30sp</dimen>
+    <dimen name="cover_image_height">150dp</dimen>
+    <dimen name="cover_image_width">350dp</dimen>
+    <dimen name="cover_image_top_margin">-80dp</dimen>
+    <dimen name="home_layout_padding_top">25dp</dimen>
+    <dimen name="home_layout_padding_bottom">80dp</dimen>
+    <dimen name="header_height_basic">80dp</dimen>
+    <dimen name="header_height_small">60dp</dimen>
+
+    <dimen name="navbar_height">60dp</dimen>
+
+    <dimen name="product_layout_padding">20dp</dimen>
+    <dimen name="product_image_stroke_width">2dp</dimen>
+    <dimen name="product_image_corner_radius">2dp</dimen>
+    <dimen name="product_container_height">155dp</dimen>
+    <dimen name="product_container_width">155dp</dimen>
+    <dimen name="product_title_size">18sp</dimen>
+    <dimen name="product_info_margin_top">5dp</dimen>
+    <dimen name="product_single_image_height">450dp</dimen>
+    <dimen name="product_name_text_size">20sp</dimen>
+    <dimen name="product_price_text_size">26sp</dimen>
+    <dimen name="product_desc_text_size">16sp</dimen>
+    <dimen name="product_single_bottom_bar_height">80dp</dimen>
+    <dimen name="footer_padding">12dp</dimen>
+
+    <dimen name="cart_layout_padding">12dp</dimen>
+    <dimen name="cart_content_padding">12dp</dimen>
+    <dimen name="cart_container_height">130dp</dimen>
+    <dimen name="cart_container_margin_bottom">260dp</dimen>
+    <dimen name="cart_container_image_size">130dp</dimen>
+    <dimen name="margin_qty_layout">10dp</dimen>
+    <dimen name="cart_delete_icon_size">34dp</dimen>
+
+    <dimen name="address_list_item_height">100dp</dimen>
+
+    <dimen name="text_size_small">12sp</dimen>
+    <dimen name="text_size_medium">20sp</dimen>
+    <dimen name="text_size_large">34sp</dimen>
+    <!-- Default screen margins, per the Android Design guidelines. -->
+    <dimen name="activity_horizontal_margin">16dp</dimen>
+    <dimen name="activity_vertical_margin">16dp</dimen>
+    <dimen name="fab_margin">16dp</dimen>
+</resources>
