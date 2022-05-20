@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center_horizontal"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:padding="@dimen/product_layout_padding"
+    android:orientation="vertical">
+<RelativeLayout
+    android:id="@+id/product_layout_relative_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layout_constraintEnd_toEndOf="parent"
+    android:gravity="center_horizontal"
+    app:layout_constraintStart_toStartOf="parent"
+    app:layout_constraintTop_toTopOf="parent">
+    <LinearLayout
+        android:id="@+id/product_layout_linear_layout"
+        android:layout_width="@dimen/product_container_width"
+        android:layout_height="@dimen/product_container_height"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+        <ImageView
+            android:id="@+id/product_image"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:src="@drawable/product_image_placeholder"
+            android:scaleType="centerCrop"
+            tools:ignore="ContentDescription" />
+    </LinearLayout>
+
+    <RelativeLayout
+        android:id="@+id/product_info_container"
+        android:layout_width="@dimen/product_container_width"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/product_layout_linear_layout"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <com.example.yshopping.utils.MSPTextViewBold
+            android:id="@+id/product_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Product Name"
+            android:textAlignment="textStart"
+            android:textColor="@color/black"
+            android:textSize="@dimen/product_title_size"
+            tools:ignore="HardcodedText" />
+
+        <com.example.yshopping.utils.MSPTextViewRegular
+            android:id="@+id/product_price"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/product_name"
+            android:layout_marginTop="@dimen/product_info_margin_top"
+            android:text="Rs. 999"
+            android:textAlignment="textStart"
+            android:textColor="@color/secondaryGreen"
+            tools:ignore="HardcodedText" />
+    </RelativeLayout>
+</RelativeLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>
