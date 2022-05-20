@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activities.fragments.HomeFragment">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+        <FrameLayout
+            android:id="@+id/header_frame"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/home_header_height"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+            <ImageView
+                android:id="@+id/header_image"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:scaleType="centerCrop"
+                android:background="@color/primaryGreen"
+                tools:ignore="ContentDescription" />
+            <Toolbar
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/action_bar_height"
+                android:id="@+id/toolbar"
+                android:layout_marginTop="@dimen/toolbar_margin_top"
+                android:elevation="4dp">
+                <com.example.yshopping.utils.MSPTextViewBold
+                    android:id="@+id/toolbar_title"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/home_title_text_size"
+                    android:gravity="center_horizontal"
+                    android:layout_marginLeft="@dimen/cardview_content_margin"
+                    android:layout_marginRight="@dimen/cardview_content_margin"
+                    android:text="Y-Shopping"
+                    tools:ignore="HardcodedText" />
+            </Toolbar>
+
+        </FrameLayout>
+        <ImageView
+            android:id="@+id/cover_image"
+            android:background="@drawable/button_bg"
+            android:layout_width="@dimen/cover_image_width"
+            android:layout_height="@dimen/cover_image_height"
+            android:layout_marginTop="@dimen/cover_image_top_margin"
+            android:layout_gravity="center_horizontal"
+            android:src="@drawable/home_banner"
+            android:scaleType="centerCrop"
+            android:clipToOutline="true"
+            tools:ignore="ContentDescription"
+            tools:targetApi="s" />
+        <ScrollView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fillViewport="true"
+            android:scrollbars="none">
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/content_layout"
+                android:layout_gravity="center_horizontal"
+                android:gravity="center_horizontal"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                android:paddingTop="@dimen/home_layout_padding_top">
+
+                <androidx.recyclerview.widget.RecyclerView
+                    android:id="@+id/recycler_view"
+                    app:layoutManager="androidx.recyclerview.widget.GridLayoutManager"
+                    app:spanCount="2"
+                    android:layout_height="wrap_content"
+                    android:visibility="gone"
+                    android:layout_width="wrap_content"
+                    android:paddingBottom="@dimen/home_layout_padding_bottom"/>
+
+                <com.example.yshopping.utils.MSPTextViewRegular
+                    android:id="@+id/empty_view"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="@dimen/cardview_content_margin"
+                    android:layout_marginRight="@dimen/cardview_content_margin"
+                    android:textAlignment="center"
+                    android:text="No Products Available"
+                    android:textColor="@color/teal_700"
+                    tools:ignore="HardcodedText" />
+            </RelativeLayout>
+        </ScrollView>
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>
