@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activities.AddProductActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+        <FrameLayout
+            android:id="@+id/header_frame"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/settings_header_height"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+            <ImageView
+                android:id="@+id/header_image"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:scaleType="centerCrop"
+                android:background="@color/primaryGreen"
+                tools:ignore="ContentDescription" />
+            <Toolbar
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/action_bar_height"
+                android:layout_marginTop="@dimen/toolbar_margin_top"
+                android:id="@+id/toolbar"
+                android:elevation="4dp">
+                <com.example.yshopping.utils.MSPTextViewRegular
+                    android:id="@+id/toolbar_title"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/toolbar_title_text_size"
+                    android:gravity="end"
+
+                    android:layout_marginLeft="@dimen/cardview_content_margin"
+                    android:layout_marginRight="@dimen/cardview_content_margin"
+                    android:text="Add Product"
+                    tools:ignore="HardcodedText" />
+            </Toolbar>
+            <ImageView
+                android:id="@+id/product_image"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/product_image_height_large"
+                android:layout_marginTop="@dimen/product_image_top_margin_small"
+                android:layout_gravity="center_horizontal"
+                android:src="@drawable/product_image_placeholder"
+                android:scaleType="centerCrop"
+                tools:ignore="ContentDescription"/>
+            <ImageView
+                android:id="@+id/product_image_add"
+                android:layout_width="@dimen/add_img_icon_width"
+                android:layout_height="@dimen/add_img_icon_height"
+                android:src="@drawable/ic_baseline_add_photo_alternate_24"
+                android:layout_gravity="end|bottom"
+                android:scaleType="centerCrop" />
+        </FrameLayout>
+        <ScrollView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fillViewport="true"
+            android:scrollbars="none">
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/content_layout"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                android:paddingTop="@dimen/content_layout_padding_top">
+
+                <com.example.yshopping.utils.YSEditText
+                    android:id="@+id/pro_title"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/settings_content_margin"
+                    android:layout_marginRight="@dimen/settings_content_margin"
+                    android:background="@drawable/edit_text_border"
+                    android:hint="Product Title"
+                    android:inputType="text"
+                    android:padding="@dimen/settings_text_padding"
+                    android:textSize="@dimen/text_size_medium"
+                    tools:ignore="HardcodedText">
+                </com.example.yshopping.utils.YSEditText>
+
+                <com.example.yshopping.utils.YSEditText
+                    android:id="@+id/pro_price"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/pro_title"
+                    android:inputType="numberDecimal"
+                    android:layout_marginLeft="@dimen/settings_content_margin"
+                    android:layout_marginTop="@dimen/settings_content_margin"
+                    android:layout_marginRight="@dimen/settings_content_margin"
+                    android:background="@drawable/edit_text_border"
+                    android:padding="@dimen/settings_text_padding"
+                    android:hint="Price (LKR)"
+                    android:textSize="@dimen/text_size_medium"
+                    tools:ignore="HardcodedText">
+                </com.example.yshopping.utils.YSEditText>
+                <com.example.yshopping.utils.YSEditText
+                    android:id="@+id/pro_desc"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:inputType="textMultiLine"
+                    android:minLines="4"
+                    android:layout_marginLeft="@dimen/settings_content_margin"
+                    android:layout_marginTop="@dimen/settings_content_margin"
+                    android:layout_marginRight="@dimen/settings_content_margin"
+                    android:background="@drawable/edit_text_border"
+                    android:padding="@dimen/settings_text_padding"
+                    android:layout_below="@+id/pro_price"
+                    android:hint="Description"
+                    android:textSize="@dimen/text_size_medium"
+                    tools:ignore="HardcodedText">
+                </com.example.yshopping.utils.YSEditText>
+                <com.example.yshopping.utils.YSEditText
+                    android:id="@+id/pro_qty"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:inputType="number"
+                    android:layout_marginLeft="@dimen/settings_content_margin"
+                    android:layout_marginTop="@dimen/settings_content_margin"
+                    android:layout_marginRight="@dimen/settings_content_margin"
+                    android:background="@drawable/edit_text_border"
+                    android:padding="@dimen/settings_text_padding"
+                    android:layout_below="@+id/pro_desc"
+                    android:hint="Quantity"
+                    android:textSize="@dimen/text_size_medium"
+                    tools:ignore="HardcodedText">
+                </com.example.yshopping.utils.YSEditText>
+                <com.example.yshopping.utils.YSButton
+                    android:id="@+id/btn_add"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/pro_qty"
+                    android:layout_marginLeft="@dimen/settings_content_margin"
+                    android:layout_marginTop="@dimen/settings_content_margin"
+                    android:layout_marginRight="@dimen/settings_content_margin"
+                    android:layout_marginBottom="@dimen/settings_content_margin"
+                    android:background="@drawable/button_bg"
+                    android:text="ADD PRODUCT"
+                    android:textColor="@color/white"
+                    tools:ignore="HardcodedText" />
+            </RelativeLayout>
+        </ScrollView>
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>
