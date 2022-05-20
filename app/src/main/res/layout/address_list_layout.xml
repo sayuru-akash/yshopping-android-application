@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/address_list_item_height"
+        android:background="@color/grey_200"
+        android:paddingTop="@dimen/footer_padding"
+        android:paddingBottom="@dimen/footer_padding"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginTop="@dimen/settings_content_margin"
+        android:orientation="vertical">
+<LinearLayout
+    android:id="@+id/address_list_layout_top"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal">
+    <com.example.yshopping.utils.MSPTextViewBold
+        android:id="@+id/address_item_name"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="Full Name"
+        android:layout_weight="1"
+        android:textSize="@dimen/text_size_medium"
+        android:textColor="@color/black"
+        android:gravity="start"
+        android:layout_marginLeft="@dimen/settings_content_margin"
+        android:layout_marginRight="@dimen/settings_content_margin"
+        tools:ignore="HardcodedText" />
+    <com.example.yshopping.utils.MSPTextViewBold
+        android:id="@+id/address_item_type"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Home"
+        android:gravity="end"
+        android:padding="@dimen/edit_text_padding"
+        android:textSize="@dimen/text_size_small"
+        android:background="@color/primaryGreen"
+        android:textColor="@color/white"
+        android:textAllCaps="true"
+        android:layout_marginLeft="@dimen/settings_content_margin"
+        android:layout_marginRight="@dimen/settings_content_margin"
+        tools:ignore="HardcodedText" />
+</LinearLayout>
+
+    <com.example.yshopping.utils.MSPTextViewRegular
+        android:id="@+id/address_item_address"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Address"
+        android:textColor="@color/black"
+        android:layout_marginLeft="@dimen/settings_content_margin"
+        android:layout_marginRight="@dimen/settings_content_margin"
+        tools:ignore="HardcodedText" />
+    <com.example.yshopping.utils.MSPTextViewRegular
+        android:id="@+id/address_item_phone"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Phone"
+        android:textColor="@color/black"
+        android:layout_marginLeft="@dimen/settings_content_margin"
+        android:layout_marginRight="@dimen/settings_content_margin"
+        tools:ignore="HardcodedText" />
+
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>
