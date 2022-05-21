@@ -1,0 +1,163 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activities.RegisterActivity">
+    <FrameLayout
+        android:id="@+id/login_header_frame"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/header_section_height"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+        <ImageView
+            android:id="@+id/login_header_image"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:scaleType="centerCrop"
+            android:src="@drawable/login_header_image"
+            tools:ignore="ContentDescription" />
+        <Toolbar
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/action_bar_height"
+            android:id="@+id/toolbar"
+            android:elevation="4dp">
+        </Toolbar>
+        <com.example.yshopping.utils.MSPTextViewBold
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/header_text_top_margin"
+            android:gravity="center_horizontal"
+            android:text="Sign Up"
+            android:textColor="@color/white"
+            android:textSize="@dimen/header_text_size"
+            tools:ignore="HardcodedText">
+        </com.example.yshopping.utils.MSPTextViewBold>
+    </FrameLayout>
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="@dimen/signup_card_width"
+        android:layout_height="@dimen/signup_card_height"
+        android:layout_marginTop="@dimen/signup_card_top_margin"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:cardElevation="@dimen/cardview_elevation"
+        app:cardCornerRadius="@dimen/cardview_corner_radius">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <com.example.yshopping.utils.YSEditText
+                android:id="@+id/reg_fname_text"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="text"
+                android:layout_marginLeft="@dimen/cardview_content_margin"
+                android:layout_marginRight="@dimen/cardview_content_margin"
+                android:background="@drawable/edit_text_border"
+                android:padding="@dimen/edit_text_padding"
+                android:layout_marginTop="40dp"
+                android:hint="First Name"
+                tools:ignore="HardcodedText">
+            </com.example.yshopping.utils.YSEditText>
+            <com.example.yshopping.utils.YSEditText
+                android:id="@+id/reg_lname_text"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="text"
+                android:layout_marginLeft="@dimen/cardview_content_margin"
+                android:layout_marginRight="@dimen/cardview_content_margin"
+                android:background="@drawable/edit_text_border"
+                android:layout_below="@id/reg_fname_text"
+                android:padding="@dimen/edit_text_padding"
+                android:layout_marginTop="10dp"
+                android:hint="Last Name"
+                tools:ignore="HardcodedText">
+            </com.example.yshopping.utils.YSEditText>
+
+            <com.example.yshopping.utils.YSEditText
+                android:id="@+id/reg_email_text"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/reg_lname_text"
+                android:inputType="textEmailAddress"
+                android:layout_marginLeft="@dimen/cardview_content_margin"
+                android:layout_marginTop="10dp"
+                android:layout_marginRight="@dimen/cardview_content_margin"
+                android:background="@drawable/edit_text_border"
+                android:hint="E-mail"
+                android:padding="@dimen/edit_text_padding"
+                tools:ignore="HardcodedText">
+            </com.example.yshopping.utils.YSEditText>
+            <com.example.yshopping.utils.YSEditText
+                android:id="@+id/reg_pwd_text"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="textPassword"
+                android:layout_marginTop="10dp"
+                android:layout_marginLeft="@dimen/cardview_content_margin"
+                android:layout_marginRight="@dimen/cardview_content_margin"
+                android:background="@drawable/edit_text_border"
+                android:layout_below="@id/reg_email_text"
+                android:padding="@dimen/edit_text_padding"
+                android:hint="Password"
+                tools:ignore="HardcodedText">
+            </com.example.yshopping.utils.YSEditText>
+
+            <com.example.yshopping.utils.YSEditText
+                android:id="@+id/reg_pwd_check_text"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="textPassword"
+                android:layout_below="@id/reg_pwd_text"
+                android:layout_marginLeft="@dimen/cardview_content_margin"
+                android:layout_marginTop="10dp"
+                android:layout_marginRight="@dimen/cardview_content_margin"
+                android:background="@drawable/edit_text_border"
+                android:hint="Confirm Password"
+                android:padding="@dimen/edit_text_padding"
+                tools:ignore="HardcodedText">
+            </com.example.yshopping.utils.YSEditText>
+
+            <com.example.yshopping.utils.YSCheckbox
+                android:id="@+id/reg_check_terms"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/reg_pwd_check_text"
+                android:layout_marginLeft="@dimen/cardview_content_margin"
+                android:layout_marginRight="@dimen/cardview_content_margin"
+                android:scaleY="0.70"
+                android:text="I agree to the terms and conditions"
+                android:textAlignment="viewStart"
+                android:textSize="@dimen/text_size_small"
+                tools:ignore="HardcodedText,RtlHardcoded">
+            </com.example.yshopping.utils.YSCheckbox>
+
+            <com.example.yshopping.utils.YSButton
+                android:id="@+id/reg_button"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/reg_check_terms"
+                android:layout_marginLeft="@dimen/cardview_content_margin"
+                android:layout_marginTop="20dp"
+                android:layout_marginRight="@dimen/cardview_content_margin"
+                android:background="@drawable/button_bg"
+                android:text="Sign Up"
+                android:textColor="@color/white"
+                tools:ignore="HardcodedText" />
+            <com.example.yshopping.utils.MSPTextViewLight
+                android:id="@+id/existing_user_text"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_horizontal"
+                android:textColor="@color/primaryGreen"
+                android:text="Existing User?"
+                android:clickable="true"
+                android:layout_marginTop="20dp"
+                android:layout_below="@id/reg_button"
+                tools:ignore="HardcodedText,KeyboardInaccessibleWidget" />
+        </RelativeLayout>
+    </androidx.cardview.widget.CardView>
+</androidx.constraintlayout.widget.ConstraintLayout>
