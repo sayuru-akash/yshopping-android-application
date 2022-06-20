@@ -128,7 +128,7 @@ Don't forget to give the project a star! Thanks again!
 <!-- CONTRIBUTORS -->
 ## Contributors
 
-This project is contributed by 
+This project is an academic project done on 2021 and is contributed by 
 * [Sayuru Akash](https://github.com/sayuru-akash/)
 * [Isuru Pathirathna](https://github.com/Is116)
 * [Lochini Chamodya](https://github.com/Lchamodya)
