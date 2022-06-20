@@ -1,3 +1,162 @@
-# yshopping-android-application
+<div id="top"></div>
 
-## Mobile App Development Assignment
+[![Contributors][contributors-shield]][contributors-url]
+[![Forks][forks-shield]][forks-url]
+[![Stargazers][stars-shield]][stars-url]
+[![Issues][issues-shield]][issues-url]
+[![GPL License][license-shield]][license-url]
+[![LinkedIn][linkedin-shield]][linkedin-url]
+
+
+
+<!-- PROJECT LOGO -->
+<br />
+<div align="center">
+  <a href="https://github.com/sayuru-akash/yshopping-android-application">
+    <img src="images/logo.png" alt="Logo" width="80" height="80">
+  </a>
+
+<h3 align="center">Yshopping Android Shopping Application - Kotlin</h3>
+
+  <p align="center">
+    A Shopping Application developed for a supermarket for an academic project. The application is developed in Kotlin and uses the Kotlin Android SDK. It also uses Firebase for database.
+    <br />
+    <a href="https://github.com/sayuru-akash/yshopping-android-application"><strong>Explore the project »</strong></a>
+    <br />
+  </p>
+</div>
+
+
+
+<!-- TABLE OF CONTENTS -->
+<details>
+  <summary>Table of Contents</summary>
+  <ol>
+    <li>
+      <a href="#about-the-project">About The Project</a>
+      <ul>
+        <li><a href="#built-with">Built With</a></li>
+      </ul>
+    </li>
+    <li>
+      <a href="#getting-started">Getting Started</a>
+      <ul>
+        <li><a href="#prerequisites">Prerequisites</a></li>
+        <li><a href="#installation">Installation</a></li>
+      </ul>
+    </li>
+    <li><a href="#usage">Usage</a></li>
+    <li><a href="#contributing">Contributing</a></li>
+    <li><a href="#license">License</a></li>
+    <li><a href="#contact">Contact</a></li>
+  </ol>
+</details>
+
+
+
+<!-- ABOUT THE PROJECT -->
+## About The Project
+
+[![Product Name Screen Shot][product-screenshot]](https://github.com/sayuru-akash/yshopping-android-application)
+
+<p align="right">(<a href="#top">back to top</a>)</p>
+
+
+
+### Built With
+
+* [Kotlin]
+* [Firebase]
+
+<p align="right">(<a href="#top">back to top</a>)</p>
+
+
+
+<!-- GETTING STARTED -->
+## Getting Started
+
+To get a local copy up and running follow these simple example steps.
+
+### Prerequisites
+
+This project is built using Koylin. You may need to have installed android developer tools to run the project.
+
+### Installation
+
+1. Get Android development tools and SDK.
+2. Clone the repo and resolve dependencies, if any
+   ```sh
+   git clone https://github.com/sayuru-akash/yshopping-android-application.git
+   ```
+3. Run the build gradle in the project location
+4. Connect to the firebase with the firebase file
+5. Run the project
+
+
+<p align="right">(<a href="#top">back to top</a>)</p>
+
+
+
+<!-- USAGE EXAMPLES -->
+## Usage
+
+This project can be used for a verification system where admins can add data manually as they prefer.
+
+<p align="right">(<a href="#top">back to top</a>)</p>
+
+
+
+
+<!-- CONTRIBUTING -->
+## Contributing
+
+Contributions are what make the open source community such an amazing place to learn, inspire, and create. Any contributions you make are **greatly appreciated**.
+
+If you have a suggestion that would make this better, please fork the repo and create a pull request. You can also simply open an issue with the tag "enhancement".
+Don't forget to give the project a star! Thanks again!
+
+1. Fork the Project
+2. Create your Feature Branch (`git checkout -b feature/AmazingFeature`)
+3. Commit your Changes (`git commit -m 'Add some AmazingFeature'`)
+4. Push to the Branch (`git push origin feature/AmazingFeature`)
+5. Open a Pull Request
+
+<p align="right">(<a href="#top">back to top</a>)</p>
+
+
+
+<!-- LICENSE -->
+## License
+
+Distributed under the GPL-3.0 License. See `LICENSE` for more information.
+
+<p align="right">(<a href="#top">back to top</a>)</p>
+
+
+
+<!-- CONTACT -->
+## Contact
+
+Sayuru Akash - [@sayuru_akash](https://twitter.com/sayuru_akash) - contact@sayuru.me
+
+Project Link: [https://github.com/sayuru-akash/yshopping-android-application](https://github.com/sayuru-akash/yshopping-android-application)
+
+<p align="right">(<a href="#top">back to top</a>)</p>
+
+
+
+<!-- MARKDOWN LINKS & IMAGES -->
+<!-- https://www.markdownguide.org/basic-syntax/#reference-style-links -->
+[contributors-shield]: https://img.shields.io/github/contributors/sayuru-akash/yshopping-android-application.svg?style=for-the-badge
+[contributors-url]: https://github.com/sayuru-akash/yshopping-android-application/graphs/contributors
+[forks-shield]: https://img.shields.io/github/forks/sayuru-akash/yshopping-android-application.svg?style=for-the-badge
+[forks-url]: https://github.com/sayuru-akash/yshopping-android-application/network/members
+[stars-shield]: https://img.shields.io/github/stars/sayuru-akash/yshopping-android-application.svg?style=for-the-badge
+[stars-url]: https://github.com/sayuru-akash/yshopping-android-application/stargazers
+[issues-shield]: https://img.shields.io/github/issues/sayuru-akash/yshopping-android-application.svg?style=for-the-badge
+[issues-url]: https://github.com/sayuru-akash/yshopping-android-application/issues
+[license-shield]: https://img.shields.io/github/license/sayuru-akash/yshopping-android-application.svg?style=for-the-badge
+[license-url]: https://github.com/sayuru-akash/yshopping-android-application/blob/master/LICENSE
+[linkedin-shield]: https://img.shields.io/badge/-LinkedIn-black.svg?style=for-the-badge&logo=linkedin&colorB=555
+[linkedin-url]: https://linkedin.com/in/sayuru_akash
+[product-screenshot]: images/screenshot.png
