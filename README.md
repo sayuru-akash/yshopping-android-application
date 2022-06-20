@@ -47,6 +47,7 @@
     </li>
     <li><a href="#usage">Usage</a></li>
     <li><a href="#contributing">Contributing</a></li>
+    <li><a href="#contributors">Contributors</a></li>
     <li><a href="#license">License</a></li>
     <li><a href="#contact">Contact</a></li>
   </ol>
@@ -124,6 +125,16 @@ Don't forget to give the project a star! Thanks again!
 <p align="right">(<a href="#top">back to top</a>)</p>
 
 
+<!-- CONTRIBUTORS -->
+## Contributors
+
+This project is contributed by 
+* [Sayuru Akash](https://github.com/sayuru-akash/)
+* [Isuru Pathirathna](https://github.com/Is116)
+* [Lochini Chamodya](https://github.com/Lchamodya)
+* [Yasasi Rathnayake](https://github.com/yasasirathnayake)
+* [Suvindi Wimarsha](https://github.com/suvindi)
+* [Pyara Rathnayake](https://github.com/pyararatnayake)
 
 <!-- LICENSE -->
 ## License
