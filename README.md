@@ -80,7 +80,7 @@ To get a local copy up and running follow these simple example steps.
 
 ### Prerequisites
 
-This project is built using Koylin. You may need to have installed android developer tools to run the project.
+This project is built using Kotlin. You may need to have installed android developer tools to run the project.
 
 ### Installation
 
@@ -101,7 +101,7 @@ This project is built using Koylin. You may need to have installed android devel
 <!-- USAGE EXAMPLES -->
 ## Usage
 
-This project can be used for a verification system where admins can add data manually as they prefer.
+This project can be used to create a shopping application for a supermarket.
 
 <p align="right">(<a href="#top">back to top</a>)</p>
 
